@@ -1,0 +1,1 @@
+docker service  -d --name engineering-bay --replicas 2 --network overmind -e OC_USERNAME=mbotes OC_PASSWD=123 42school/engineering-bay
