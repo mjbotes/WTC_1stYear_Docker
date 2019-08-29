@@ -1,6 +1,9 @@
-from alpine:latest
+FROM alpine:latest
+
 MAINTAINER mbotes (mbotes@student.wethinkcode.co.za)
-cmd
-[
-    apt get install vim
-]
+
+RUN apk update
+RUN apk add vim
+
+ENTRYPOINT vim
+
