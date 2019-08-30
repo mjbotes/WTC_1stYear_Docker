@@ -1,6 +1,3 @@
-
-FROM ruby:latest
-
-MAINTAINER mbotes (mbotes@student.wethinkcode.co.za)
-
-RUN apt-get update && apt-get install -y nodejs && gem install rails && mkdir -p /opt/app
+FROM ft-rails:on-build
+EXPOSE 3000
+CMD ["rails", "s", "-b", "0.0.0.0", "-p", "3000"]

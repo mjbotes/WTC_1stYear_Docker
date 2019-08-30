@@ -3,13 +3,14 @@ FROM debian
 
 MAINTAINER mbotes (mbotes@student.wethinkcode.co.za)
 
-RUN apt-get update -y && apt-get upgrade -y
+RUN apt-get update -y
+RUN apt-get upgrade -y
 RUN apt-get install curl -y
 RUN apt-get install bzip2 -y
 
 EXPOSE 9987/udp
 EXPOSE 30033
-EXPOSE 10011
+EXPOSE 1001
 EXPOSE 41144
 
 RUN useradd ts3
