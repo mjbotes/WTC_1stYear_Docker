@@ -1,4 +1,0 @@
-echo "\033[0;31mBUILDING CONTAINER TEAMSPEAK SERVER0\033[0;37m"
-docker build -t ts3 .
-echo "\033[0;32mRUNNING CONTAINER TEAMSPEAK SERVER\033[0;37m"
-docker run -d --name ts3 -p 9987:9987/udp -p 30033:30033/tcp -p 10011:10011/tcp ts3

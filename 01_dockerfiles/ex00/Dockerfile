@@ -2,6 +2,7 @@
 FROM alpine:latest
 
 RUN apk update
-RUN apk add vim
+RUN apk upgrade
+RUN apk add emacs
 
-ENTRYPOINT vim
+ENTRYPOINT emacs

@@ -1,2 +1,1 @@
 eval "$(docker-machine env Char)"
-# env | grep DOCKER
